@@ -9,7 +9,7 @@ body {
 }
 
 #game-board {
-    background-color: whitesmoke;
+    background-color: grey;
     width:100vmin;
     height:100vmin;
     display: grid;
