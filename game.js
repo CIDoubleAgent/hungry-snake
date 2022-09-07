@@ -9,7 +9,7 @@ const gameBoard = document.getElementById('game-board');
 function main(currentTime) {
     if (gameOver) {
         if (confirm('Game Over, press OK to restart.')) {
-            window.location = 'https://cidoubleagent.github.io/hungry-snake/'
+            window.location.reload();
         }
         return;
     }
