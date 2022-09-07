@@ -2,14 +2,27 @@ body {
     height: 100vh;
     width: 100vw;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     background-color: rgb(52, 52, 52);
 }
 
+#score-board {
+    font-size: 2rem;
+    width:100vmin;
+    text-align: center;
+    color: rgb(61, 61, 61);
+    border-bottom: solid .25vmin;
+    border-color: rgb(52, 52, 52);
+    background-color: black;
+}
+
 #game-board {
     background-color: black;
+    border-bottom: solid .25vmin;
+    border-color: rgb(52, 52, 52);
     width:100vmin;
     height:100vmin;
     display: grid;
@@ -24,7 +37,7 @@ body {
 }
 
 .snake:first-of-type {
-    background-color: greenyellow;
+    background-color: rgb(182, 255, 72);
 }
 
 .food {
