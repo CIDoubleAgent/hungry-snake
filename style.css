@@ -6,7 +6,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(41, 41, 41);
 }
 
 #score-board {
@@ -15,14 +15,14 @@ body {
     text-align: center;
     color: rgb(61, 61, 61);
     border-bottom: solid .25vmin;
-    border-color: rgb(52, 52, 52);
+    border-color: rgb(41, 41, 41);
     background-color: black;
 }
 
 #game-board {
     background-color: black;
     border-bottom: solid .25vmin;
-    border-color: rgb(52, 52, 52);
+    border-color: rgb(41, 41, 41);
     width:100vmin;
     height:100vmin;
     display: grid;

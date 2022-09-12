@@ -1,8 +1,10 @@
 import { getInputDirection } from './input.js';
 import { updateScore } from './score.js';
 
-export const snakeSpeed = 6;
-const snakeBody = [{ x: 11, y: 11 }]
+export const SNAKE_SPEED = 6;
+const START_POSITION = [{ x: 11, y: 11 }];
+
+const snakeBody = START_POSITION;
 let newSegments = 0;
 
 export function update() {
