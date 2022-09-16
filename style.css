@@ -3,26 +3,74 @@ body {
     width: 100vw;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: rgb(41, 41, 41);
+    background-color: black;
+}
+
+#grid {
+    display: grid;
+    grid-template: 1fr / repeat(5, 1fr);
+    background-color: black;
+    width: 100vw;
+}
+
+#difficulty-wrapper {
+    grid-column: 2;
+    font-size: 1rem;
+    align-self: center;
+    justify-self: center;
+    transform:translateY(-20%);
+    color: rgb(61, 61, 61);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: visible;
+      width: 110px;
+      -webkit-appearance: none;
+      background-color: #414141;
+      height: 100%;
+      border-radius: 5px;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      color: #414141;
+      height: 5px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 15px;
+      -webkit-appearance: none;
+      height: 15px;
+      cursor: pointer;
+      background: #292929;
+      border: solid .1px;
+      border-radius: 50%;
+      transform: translateY(-30%);
+    }
 }
 
 #score-board {
+    grid-column: 3;
     font-size: 2rem;
-    width:100vmin;
     text-align: center;
     color: rgb(61, 61, 61);
-    border-bottom: solid .25vmin;
-    border-color: rgb(41, 41, 41);
+    background-color: black;
+}
+
+#personal-best {
+    grid-column: 4;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(61, 61, 61);
     background-color: black;
 }
 
 #game-board {
     background-color: black;
-    border-bottom: solid .25vmin;
-    border-color: rgb(41, 41, 41);
+    outline: 2px solid rgb(61, 61, 61);
     width:100vmin;
     height:100vmin;
     display: grid;
