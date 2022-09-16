@@ -6,28 +6,26 @@ body {
     align-items: center;
     margin: 0;
     background-color: black;
+    font-family: 'Dosis', sans-serif;
 }
 
 #grid {
     display: grid;
-    grid-template: 1fr / repeat(5, 1fr);
-    background-color: black;
-    width: 100vw;
+    grid-template: 1fr / repeat(6, 1fr);
 }
 
 #difficulty-wrapper {
     grid-column: 2;
-    font-size: 1rem;
     align-self: center;
     justify-self: center;
     transform:translateY(-20%);
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: visible;
-      width: 110px;
+      width: 100px;
       -webkit-appearance: none;
       background-color: #414141;
       border-radius: 5px;
@@ -53,36 +51,42 @@ body {
 
 #score-board {
     grid-column: 3;
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-align: center;
     color: #494949;
-    background-color: black;
-    margin: 10px 5px 10px 0px;
+    margin: 10px 15px;
+}
+
+#last-score {
+    grid-column: 4;
+    font-size: 1.75rem;
+    text-align: center;
+    color: #494949;
+    margin: 10px 15px;
 }
 
 #personal-best {
-    grid-column: 4;
-    font-size: 2rem;
+    grid-column: 5;
+    font-size: 1.75rem;
     text-align: center;
     color: #494949;
-    background-color: black;
-    margin: 10px 0px 10px 5px;
+    margin: 10px 15px;
 }
 
 #game-board {
-    background-color: black;
     outline: 2px solid #414141;
-    width:100vmin;
-    height:100vmin;
+    border-radius: 4px;
+    width:89vmin;
+    height:89vmin;
     display: grid;
     grid-template: repeat(21, 1fr) / repeat(21, 1fr);
+    margin: 0 20px 20px 20px;
 }
 
 .snake {
     background-color: yellowgreen;
-    border: .25vmin solid black;
     border-radius: 40%;
-    margin: .2vmin;
+    margin: .25vmin;
 }
 
 .snake:first-of-type {
@@ -91,7 +95,6 @@ body {
 
 .food {
     background-color: whitesmoke;
-    border: .25vmin solid black;
     border-radius: 50%;
     margin: .8vmin;
 }
