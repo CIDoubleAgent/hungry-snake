@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Hungry Snake</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='game.js' defer type="module"></script>
-</head>
-<body>
-    <div id="grid">
-        <section id="difficulty-wrapper">
-            <div>
-                <input type="range" id="difficulty-slider" name="difficulty"
-                        min="1" max="5">
-            </div>
-        </section>
-        <section id="score-board">Score: <span id="scoreCount">0</span></section>
-        <section id="personal-best">Best: <span id="personalBest">0</span></section>
-    </div>
-    <section id="game-board"></section>
-</body>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Hungry Snake</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <script src='game.js' defer type="module"></script>
+    </head>
+    <body>
+        <div id="grid">
+            <section id="difficulty-wrapper">
+                <div>
+                    <input type="range" id="difficulty-slider" 
+                    name="difficulty" min="1" max="5">
+                </div>
+            </section>
+            <section id="score-board">Score <span id="scoreCount">0</span></section>
+            <section id="personal-best">Best <span id="personalBest">0</span></section>
+        </div>
+        <section id="game-board"></section>
+    </body>
 </html>

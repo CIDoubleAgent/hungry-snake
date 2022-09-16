@@ -1,5 +1,7 @@
-let SCORE_MODIFIER = 5;
-    let score = parseInt(document.getElementById('scoreCount').innerHTML);
+import { sliderValue } from './difficulty.js'
+
+let SCORE_MODIFIER = sliderValue * 5;
+let score = parseInt(document.getElementById('scoreCount').innerHTML);
 
 export function updateScore() {
     score = score + SCORE_MODIFIER;

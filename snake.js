@@ -1,10 +1,10 @@
-import { getInputDirection } from './input.js';
-import { updateScore } from './score.js';
+import { getInputDirection } from './input.js'
+import { updateScore } from './score.js'
+import { sliderValue } from './difficulty.js'
 
-export const SNAKE_SPEED = 6;
-const START_POSITION = [{ x: 11, y: 11 }];
+export const SNAKE_SPEED = sliderValue * 2;
+const snakeBody = [{ x: 11, y: 11 }];
 
-const snakeBody = START_POSITION;
 let newSegments = 0;
 
 export function update() {
