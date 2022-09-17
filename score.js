@@ -14,7 +14,6 @@ export function updateBestScore() {
     if (personalBestScore < score) {
         personalBestScore = score;
 
-        console.log('personalBestScore is a ' + typeof personalBestScore, personalBestScore);
 
         localStorage.setItem('bestScore', personalBestScore);
     } else {
@@ -24,7 +23,8 @@ export function updateBestScore() {
 
 export function getBestScore() {
     console.log('storedBestScore is a ' + typeof storedBestScore, storedBestScore);
-    console.dir(storedBestScore);
+    console.log('personalBestScore is a ' + typeof personalBestScore, personalBestScore);
+
 
     personalBestScore = storedBestScore;
 }
