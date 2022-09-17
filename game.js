@@ -13,7 +13,7 @@ window.onload = function() {
 
 function main(currentTime) {
     if (gameOver) {
-        updateBestScore()
+        updateBestScore();
         if (confirm('Game Over, your final score is ' + document.getElementById('scoreCount').innerHTML + '. Press OK to restart.')) {
             window.location.reload();
         }
