@@ -1,7 +1,7 @@
 import { update as updateSnake, render as renderSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection } from './snake.js'
 import { update as updateFood, render as renderFood } from './food.js'
 import { outsideGrid } from './grid.js'
-import { getBestScore, updateBestScore } from './score.js'
+import { getBestScore, updateBestScore, getLastScore, updateLastScore } from './score.js'
 
 let lastRenderTime = 0;
 let gameOver = false;
@@ -9,11 +9,13 @@ const gameBoard = document.getElementById('game-board');
 
 window.onload = function() {
     getBestScore();
+    getLastScore();
 }
 
 function main(currentTime) {
     if (gameOver) {
         updateBestScore();
+        updateLastScore();
         if (confirm('Game Over, your final score is ' + document.getElementById('scoreCount').innerHTML + '. Press OK to restart.')) {
             window.location.reload();
         }

@@ -3,8 +3,7 @@ import { sliderValue } from './difficulty.js'
 let SCORE_MODIFIER = sliderValue * 5;
 let score = parseInt(document.getElementById('scoreCount').innerHTML);
 const personalBestScore = document.getElementById('personalBest');
-
-// console.log(personalBestScore.firstChild.data)
+const lastScore = document.getElementById('lastScore');
 
 export function updateScore() {
     score = score + SCORE_MODIFIER;
@@ -14,10 +13,7 @@ export function updateScore() {
 export function updateBestScore() {
     if (personalBestScore.innerHTML < score) {
             personalBestScore.innerHTML = score;
-
             localStorage.setItem('bestScore', personalBestScore.firstChild.data);
-            
-            // console.log('#1 personalBestScore is a ' + typeof personalBestScore, personalBestScore);
         } else {
         return
         }
@@ -26,8 +22,19 @@ export function updateBestScore() {
 export function getBestScore() {
     if (localStorage.getItem('bestScore')) {
         personalBestScore.innerHTML = parseInt(localStorage.getItem('bestScore'));
-        // console.log('#2 personalBestScore is a ' + typeof personalBestScore, personalBestScore);
     } else {
         personalBestScore.innerHTML = 0;
+    }
+}
+
+export function updateLastScore() {
+    localStorage.setItem('lastScore', score);
+}
+
+export function getLastScore() {
+    if (localStorage.getItem('lastScore')) {
+        lastScore.innerHTML = parseInt(localStorage.getItem('lastScore'));
+    } else {
+        lastScore.innerHTML = 0;
     }
 }
