@@ -1,9 +1,9 @@
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
-import { sliderValue } from './difficulty.js'
+import { difficultyMod } from './difficulty.js'
 
 let food = getRandomFoodPosition();
-const EXPANSION_RATE = sliderValue + 2;
+const EXPANSION_RATE = difficultyMod + 2;
 
 export function update() {
     if (onSnake(food)) {

@@ -1,6 +1,6 @@
-import { sliderValue } from './difficulty.js'
+import { difficultyMod } from './difficulty.js'
 
-let SCORE_MODIFIER = sliderValue * 5;
+let SCORE_MODIFIER = difficultyMod * 5;
 let score = parseInt(document.getElementById('scoreCount').innerHTML);
 const personalBestScore = document.getElementById('personalBest');
 const lastScore = document.getElementById('lastScore');

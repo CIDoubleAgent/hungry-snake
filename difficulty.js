@@ -1,1 +1,3 @@
-export let sliderValue = parseInt(document.getElementById('difficulty-slider').value);
+export let difficultyMod = 3;
+
+

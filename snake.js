@@ -1,8 +1,8 @@
 import { getInputDirection } from './input.js'
 import { updateScore } from './score.js'
-import { sliderValue } from './difficulty.js'
+import { difficultyMod } from './difficulty.js'
 
-export const SNAKE_SPEED = sliderValue * 2;
+export const SNAKE_SPEED = difficultyMod * 2;
 const snakeBody = [{ x: 11, y: 11 }];
 
 let newSegments = 0;
