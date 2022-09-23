@@ -65,7 +65,7 @@ body {
     height:89vmin;
     display: grid;
     grid-template: repeat(21, 1fr) / repeat(21, 1fr);
-    margin-top: .2rem;
+    margin-top: .2em;
     cursor: none;
 }
 
