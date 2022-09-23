@@ -71,9 +71,9 @@ body {
 #controls-wrapper {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-    width:45vmin;
-    height:45vmin;
-    margin-top: 30px;
+    width:55vmin;
+    height:55vmin;
+    margin-top: 40px;
     border: solid #414141;
     border-radius: 50%;
     transform: rotate(45deg);
@@ -122,10 +122,22 @@ body {
 
 @media screen and (max-width: 450px) {
     #score-board {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #controls-wrapper {
         display: grid;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #score-board {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #score-board {
+        font-size: 1em;
     }
 }
