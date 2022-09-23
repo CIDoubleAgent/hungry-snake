@@ -4,6 +4,7 @@ let SCORE_MODIFIER = difficultyMod * 5;
 let score = parseInt(document.getElementById('scoreCount').innerHTML);
 const personalBestScore = document.getElementById('personalBest');
 const lastScore = document.getElementById('lastScore');
+const resetButton = document.getElementById('reset');
 
 export function updateScore() {
     score = score + SCORE_MODIFIER;
@@ -38,3 +39,8 @@ export function getLastScore() {
         lastScore.innerHTML = 0;
     }
 }
+
+resetButton.addEventListener('click', function() {
+    localStorage.clear();
+    window.location.reload();
+})

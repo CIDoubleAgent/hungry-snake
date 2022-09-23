@@ -12,17 +12,13 @@
         <script src='game.js' defer type="module"></script>
     </head>
     <body>
-        <div id="grid">
-            <section id="difficulty-wrapper">
-                <div>
-                    <input type="range" id="difficultySlider" 
-                    name="difficulty" min="1" max="5">
-                </div>
-            </section>
-            <section id="score-board">Score <span id="scoreCount">0</span></section>
-            <section id="last-score">Last <span id="lastScore">0</span></section>
-            <section id="personal-best">Best <span id="personalBest">0</span></section>
-        </div>
-        <section id="game-board"></section>
+        <header id="score-board">
+            <div id="difficulty">Medium</div>
+            <div id="score">Score <span id="scoreCount">0</span></div>
+            <div id="last-score">Last <span id="lastScore">0</span></div>
+            <div id="personal-best">Best <span id="personalBest">0</span></div>
+            <div id="reset">Reset</div>
+        </header>
+        <main id="game-board"></main>
     </body>
 </html>
