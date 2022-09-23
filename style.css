@@ -68,6 +68,42 @@ body {
     cursor: none;
 }
 
+#controls-wrapper {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width:45vmin;
+    height:45vmin;
+    margin-top: 30px;
+    border: solid #414141;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    display: none;
+}
+
+#contorls-wrapper > section:active {
+    color: #414141;
+}
+
+#up {
+    border-right: solid 2px #414141;
+    border-bottom: solid 2px #414141;
+}
+
+#right {
+    border-left: solid 2px #414141;
+    border-bottom: solid 2px #414141;
+}
+
+#down {
+    border-top: solid 2px #414141;
+    border-left: solid 2px #414141;
+}
+
+#left {
+    border-top: solid 2px #414141;
+    border-right: solid 2px #414141;
+}
+
 .snake {
     background-color: yellowgreen;
     border-radius: 40%;
@@ -87,5 +123,9 @@ body {
 @media screen and (max-width: 450px) {
     #score-board {
         font-size: 1em;
+    }
+
+    #controls-wrapper {
+        display: grid;
     }
 }
