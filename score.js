@@ -41,6 +41,7 @@ export function getLastScore() {
 }
 
 resetButton.addEventListener('pointerup', function() {
-    localStorage.clear();
+    localStorage.removeItem('bestScore');
+    localStorage.removeItem('lastScore');
     window.location.reload();
 })
