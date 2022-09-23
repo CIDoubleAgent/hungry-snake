@@ -40,7 +40,7 @@ export function getLastScore() {
     }
 }
 
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener('pointerup', function() {
     localStorage.clear();
     window.location.reload();
 })
