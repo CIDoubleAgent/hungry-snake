@@ -25,27 +25,28 @@ body {
 }
 
 #difficulty {
-    grid-column: 1;
+    order: 1;
 }
 
 #difficulty:hover {
     cursor: pointer;
+    color: yellow;
 }
 
 #score {
-    grid-column: 2;
+    order: 2;
 }
 
 #last-score {
-    grid-column: 3;
+    order: 3;
 }
 
 #personal-best {
-    grid-column: 4;
+    order: 4;
 }
 
 #reset {
-    grid-column: 5;
+    order: 5;
 }
 
 #reset:hover {
@@ -64,7 +65,7 @@ body {
     height:89vmin;
     display: grid;
     grid-template: repeat(21, 1fr) / repeat(21, 1fr);
-    margin: 0 20px 20px 20px;
+    margin-top: .2rem;
     cursor: none;
 }
 
@@ -82,4 +83,10 @@ body {
     background-color: whitesmoke;
     border-radius: 50%;
     margin: .8vmin;
+}
+
+@media screen and (max-width: 450px) {
+    #score-board {
+        font-size: 1em;
+    }
 }
