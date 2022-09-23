@@ -8,7 +8,7 @@ export function getDifficulty() {
         case 1:
             difficultyMod = 1;
             difficultyButton.innerHTML = 'Easy';
-            difficultyButton.style.color = 'green';
+            difficultyButton.style.color = 'yellowgreen';
             console.log('Easy');
             break;
         case 2:
