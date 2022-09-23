@@ -3,7 +3,7 @@ import { randomGridPosition } from './grid.js'
 import { difficultyMod } from './difficulty.js'
 
 let food = getRandomFoodPosition();
-const EXPANSION_RATE = difficultyMod + 2;
+const EXPANSION_RATE = difficultyMod * 2;
 
 export function update() {
     if (onSnake(food)) {

@@ -2,6 +2,7 @@ import { update as updateSnake, render as renderSnake, SNAKE_SPEED, getSnakeHead
 import { update as updateFood, render as renderFood } from './food.js'
 import { outsideGrid } from './grid.js'
 import { getBestScore, updateBestScore, getLastScore, updateLastScore } from './score.js'
+import { getDifficulty } from './difficulty.js'
 
 let lastRenderTime = 0;
 let gameOver = false;
@@ -10,6 +11,7 @@ const gameBoard = document.getElementById('game-board');
 window.onload = function() {
     getBestScore();
     getLastScore();
+    getDifficulty();
 }
 
 function main(currentTime) {
