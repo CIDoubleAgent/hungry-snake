@@ -9,68 +9,52 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
-#grid {
-    display: grid;
-    grid-template: 1fr / repeat(6, 1fr);
-}
-
-#difficulty-wrapper {
-    grid-column: 2;
-    align-self: center;
-    justify-self: center;
-    transform:translateY(-20%);
-    margin: 0 15px;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type='range'] {
-      overflow: visible;
-      width: 100px;
-      -webkit-appearance: none;
-      background-color: #414141;
-      border-radius: 5px;
-    }
-    
-    input[type='range']::-webkit-slider-runnable-track {
-      -webkit-appearance: none;
-      color: #414141;
-      height: 3px;
-    }
-    
-    input[type='range']::-webkit-slider-thumb {
-      width: 25px;
-      -webkit-appearance: none;
-      height: 25px;
-      cursor: pointer;
-      background: black;
-      border: solid #414141 3px;
-      border-radius: 50%;
-      transform: translateY(-44%);
-    }
-}
-
 #score-board {
-    grid-column: 3;
-    font-size: 1.75rem;
-    text-align: center;
+    display: grid;
+    grid-template: 6vh / repeat(5, 1fr);
+    align-items: center;
+    justify-self: space-between;
+    width:89vmin;
+    font-size: 3.5vh;
+    cursor: default;
     color: #494949;
-    margin: 10px 15px;
+}
+
+#score-board > div {
+    justify-self: center;
+}
+
+#difficulty {
+    grid-column: 1;
+}
+
+#difficulty:hover {
+    cursor: pointer;
+}
+
+#score {
+    grid-column: 2;
 }
 
 #last-score {
-    grid-column: 4;
-    font-size: 1.75rem;
-    text-align: center;
-    color: #494949;
-    margin: 10px 15px;
+    grid-column: 3;
 }
 
 #personal-best {
+    grid-column: 4;
+}
+
+#reset {
     grid-column: 5;
-    font-size: 1.75rem;
-    text-align: center;
-    color: #494949;
-    margin: 10px 15px;
+}
+
+#reset:hover {
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#reset:active {
+    color: red;
 }
 
 #game-board {
@@ -81,6 +65,7 @@ body {
     display: grid;
     grid-template: repeat(21, 1fr) / repeat(21, 1fr);
     margin: 0 20px 20px 20px;
+    cursor: none;
 }
 
 .snake {
