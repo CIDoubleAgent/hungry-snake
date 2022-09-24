@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: black;
+    background-color: #212121;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -58,7 +58,8 @@ body {
 }
 
 #game-board {
-    outline: 2px solid #414141;
+    outline: 2px solid #292929;
+    background-color: black;
     border-radius: 4px;
     width:89vmin;
     height:89vmin;
@@ -75,8 +76,8 @@ body {
     height:55vmin;
     margin-top: 40px;
     color: whitesmoke;
-    background-color: #212121;
-    border: solid 4px #414141;
+    background-color: black;
+    border: solid 2px #292929;
     border-radius: 50%;
     transform: rotate(45deg);
     display: none;
@@ -94,7 +95,7 @@ body {
 #down > i,
 #left > i {
     transform: rotate(-45deg);
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #controls-wrapper > div:active {
@@ -102,23 +103,23 @@ body {
 }
 
 #up {
-    border-right: solid 2px #414141;
-    border-bottom: solid 2px #414141;
+    border-right: solid 1px #292929;
+    border-bottom: solid 1px #292929;
 }
 
 #right {
-    border-left: solid 2px #414141;
-    border-bottom: solid 2px #414141;
+    border-left: solid 1px #292929;
+    border-bottom: solid 1px #292929;
 }
 
 #down {
-    border-top: solid 2px #414141;
-    border-left: solid 2px #414141;
+    border-top: solid 1px #292929;
+    border-left: solid 1px #292929;
 }
 
 #left {
-    border-top: solid 2px #414141;
-    border-right: solid 2px #414141;
+    border-top: solid 1px #292929;
+    border-right: solid 1px #292929;
 }
 
 .snake {
@@ -139,7 +140,7 @@ body {
 
 @media screen and (max-width: 450px) {
     #score-board {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     #controls-wrapper {
@@ -147,13 +148,7 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-    #score-board {
-        font-size: 1.3em;
-    }
-}
-
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
     #score-board {
         font-size: 1em;
     }
