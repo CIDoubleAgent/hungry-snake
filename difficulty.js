@@ -18,7 +18,7 @@ export function getDifficulty() {
         case 3:
             difficultyMod = 3;
             difficultyButton.innerHTML = 'Hard';
-            difficultyButton.style.color = 'red';
+            difficultyButton.style.color = 'darkorange';
             break;
         default:
             difficultyMod = 2;
