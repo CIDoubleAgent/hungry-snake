@@ -17,7 +17,7 @@ body {
     width:89vmin;
     font-size: 3.5vh;
     cursor: default;
-    color: #494949;
+    color: whitesmoke;
 }
 
 #score-board > div {
@@ -26,12 +26,10 @@ body {
 
 #difficulty {
     order: 1;
-    opacity: .5;
 }
 
 #difficulty:hover {
     cursor: pointer;
-    opacity: 1;
 }
 
 #score {
@@ -48,13 +46,12 @@ body {
 
 #reset {
     order: 5;
-    color: red;
-    opacity: .5;
 }
 
-#reset:hover {
+#reset:hover,
+#reset:active {
     cursor: pointer;
-    opacity: 1;
+    color: red;
 }
 
 #game-board {
@@ -74,7 +71,7 @@ body {
     grid-template: 1fr 1fr / 1fr 1fr;
     width:55vmin;
     height:55vmin;
-    margin-top: 40px;
+    margin-top: 25px;
     color: whitesmoke;
     background-color: black;
     border: solid 2px #292929;
