@@ -135,13 +135,9 @@ body {
     margin: .8vmin;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 570px) {
     #score-board {
         font-size: 1.2em;
-    }
-
-    #controls-wrapper {
-        display: grid;
     }
 
     body {
@@ -149,7 +145,13 @@ body {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
+    #controls-wrapper {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 400px) {
     #score-board {
         font-size: 1em;
     }
