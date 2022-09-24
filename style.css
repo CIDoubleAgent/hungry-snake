@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: #212121;
+    background-color: #202020;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 #game-board {
-    outline: 2px solid #292929;
+    outline: 3px solid #292929;
     background-color: black;
     border-radius: 4px;
     width:89vmin;
@@ -84,7 +84,7 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
-    color: yellowgreen;
+    color: whitesmoke;
 }
 
 #up > i,
