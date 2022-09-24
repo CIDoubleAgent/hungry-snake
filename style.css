@@ -74,14 +74,31 @@ body {
     width:55vmin;
     height:55vmin;
     margin-top: 40px;
-    border: solid #414141;
+    color: whitesmoke;
+    background-color: #212121;
+    border: solid 4px #414141;
     border-radius: 50%;
     transform: rotate(45deg);
     display: none;
 }
 
-#contorls-wrapper > section:active {
-    color: #414141;
+#controls-wrapper > div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: yellowgreen;
+}
+
+#up > i,
+#right > i,
+#down > i,
+#left > i {
+    transform: rotate(-45deg);
+    font-size: 3em;
+}
+
+#controls-wrapper > div:active {
+    color: whitesmoke;
 }
 
 #up {
