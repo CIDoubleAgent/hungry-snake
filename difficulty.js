@@ -1,6 +1,6 @@
 export let difficultyMod;
 
-let difficultyVal = parseInt(localStorage.getItem('difficulty'));
+let difficultyVal = parseInt(localStorage.getItem('difficultyVal'));
 const difficultyButton = document.getElementById('difficulty');
 
 export function getDifficulty() {
@@ -23,7 +23,7 @@ export function getDifficulty() {
         default:
             difficultyMod = 2;
             difficultyButton.innerHTML = 'Medium';
-            localStorage.setItem('difficulty', 2);
+            localStorage.setItem('difficultyVal', 2);
             difficultyButton.style.color = 'yellow';
     }
 }
@@ -31,15 +31,15 @@ export function getDifficulty() {
 getDifficulty()
 
 function setDifficulty() {
-    switch (localStorage.getItem('difficulty')) {
+    switch (localStorage.getItem('difficultyVal')) {
         case '1':
-            localStorage.setItem('difficulty', 2);
+            localStorage.setItem('difficultyVal', 2);
             break;
         case '2':
-            localStorage.setItem('difficulty', 3);
+            localStorage.setItem('difficultyVal', 3);
             break;
         case '3':
-            localStorage.setItem('difficulty', 1);
+            localStorage.setItem('difficultyVal', 1);
             break;
     }
     window.location.reload();

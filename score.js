@@ -14,34 +14,34 @@ export function updateScore() {
 export function updateBestScore() {
     if (personalBestScore.innerHTML < score) {
             personalBestScore.innerHTML = score;
-            localStorage.setItem('bestScoreCount', personalBestScore.firstChild.data);
+            localStorage.setItem('bestScoreVal', personalBestScore.firstChild.data);
         } else {
         return
         }
 }
 
 export function getBestScore() {
-    if (localStorage.getItem('bestScoreCount')) {
-        personalBestScore.innerHTML = parseInt(localStorage.getItem('bestScoreCount'));
+    if (localStorage.getItem('bestScoreVal')) {
+        personalBestScore.innerHTML = parseInt(localStorage.getItem('bestScoreVal'));
     } else {
         personalBestScore.innerHTML = 0;
     }
 }
 
 export function updateLastScore() {
-    localStorage.setItem('lastScoreCount', score);
+    localStorage.setItem('lastScoreVal', score);
 }
 
 export function getLastScore() {
-    if (localStorage.getItem('lastScoreCount')) {
-        lastScore.innerHTML = parseInt(localStorage.getItem('lastScoreCount'));
+    if (localStorage.getItem('lastScoreVal')) {
+        lastScore.innerHTML = parseInt(localStorage.getItem('lastScoreVal'));
     } else {
         lastScore.innerHTML = 0;
     }
 }
 
 resetButton.addEventListener('pointerup', function() {
-    localStorage.removeItem('bestScoreCount');
-    localStorage.removeItem('lastScoreCount');
+    localStorage.removeItem('bestScoreVal');
+    localStorage.removeItem('lastScoreVal');
     window.location.reload();
 })
