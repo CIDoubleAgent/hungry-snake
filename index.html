@@ -13,19 +13,19 @@
         <script src='game.js' defer type="module"></script>
     </head>
     <body>
-        <header id="score-board">
-            <div id="difficulty"></div>
-            <div id="score">Score <span id="scoreCount">0</span></div>
-            <div id="last-score">Last <span id="lastScore">0</span></div>
-            <div id="personal-best">Best <span id="personalBest">0</span></div>
-            <div id="reset">Reset</div>
+        <header class="score-board">
+            <div id="difficulty" class="difficulty-button"></div>
+            <div>Score <span id="scoreCount">0</span></div>
+            <div>Last <span id="lastScoreCount">0</span></div>
+            <div>Best <span id="personalBestCount">0</span></div>
+            <div id="reset" class="reset-button">Reset</div>
         </header>
-        <main id="game-board"></main>
-        <section id="controls-wrapper">
-            <div id="up"><i id="up-arrow" class="fa-solid fa-chevron-up"></i></div>
-            <div id="right"><i id="right-arrow" class="fa-solid fa-chevron-right"></i></div>
-            <div id="left"><i id="left-arrow" class="fa-solid fa-chevron-left"></i></div>
-            <div id="down"><i id="down-arrow" class="fa-solid fa-chevron-down"></i></div>
+        <main id="gameBoard" class="game-board"></main>
+        <section class="controls-wrapper">
+            <div id="up" class="up-button"><i id="upArrow" class="fa-solid fa-chevron-up"></i></div>
+            <div id="right" class="right-button"><i id="rightArrow" class="fa-solid fa-chevron-right"></i></div>
+            <div id="left" class="left-button"><i id="leftArrow" class="fa-solid fa-chevron-left"></i></div>
+            <div id="down" class="down-button"><i id="downArrow" class="fa-solid fa-chevron-down"></i></div>
         </section>
     </body>
 </html>

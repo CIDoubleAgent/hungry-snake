@@ -9,7 +9,7 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
-#score-board {
+.score-board {
     display: grid;
     grid-template: 6vh / repeat(5, 1fr);
     align-items: center;
@@ -20,41 +20,21 @@ body {
     color: whitesmoke;
 }
 
-#score-board > div {
+.score-board > div {
     justify-self: center;
 }
 
-#difficulty {
-    order: 1;
-}
-
-#difficulty:hover {
+.difficulty-button:hover {
     cursor: pointer;
 }
 
-#score {
-    order: 2;
-}
-
-#last-score {
-    order: 3;
-}
-
-#personal-best {
-    order: 4;
-}
-
-#reset {
-    order: 5;
-}
-
-#reset:hover,
-#reset:active {
+.reset-button:hover,
+.reset-button:active {
     cursor: pointer;
     color: red;
 }
 
-#game-board {
+.game-board {
     outline: 3px solid #292929;
     background-color: black;
     border-radius: 4px;
@@ -66,7 +46,7 @@ body {
     cursor: none;
 }
 
-#controls-wrapper {
+.controls-wrapper {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     width:55vmin;
@@ -80,41 +60,37 @@ body {
     display: none;
 }
 
-#controls-wrapper > div {
+.controls-wrapper > div {
     display:flex;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
 }
 
-#up > i,
-#right > i,
-#down > i,
-#left > i {
+.up-button > i,
+.right-button > i,
+.down-button > i,
+.left-button > i {
     transform: rotate(-45deg);
     font-size: 2em;
 }
 
-#controls-wrapper > div:active {
-    color: whitesmoke;
-}
-
-#up {
+.upBtn {
     border-right: solid 1px #292929;
     border-bottom: solid 1px #292929;
 }
 
-#right {
+.rightBtn {
     border-left: solid 1px #292929;
     border-bottom: solid 1px #292929;
 }
 
-#down {
+.downBtn {
     border-top: solid 1px #292929;
     border-left: solid 1px #292929;
 }
 
-#left {
+.leftBtn {
     border-top: solid 1px #292929;
     border-right: solid 1px #292929;
 }
@@ -136,19 +112,19 @@ body {
 }
 
 @media screen and (max-width: 570px) {
-    #score-board {
+    .score-board {
         font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 450px) {
-    #controls-wrapper {
+    .controls-wrapper {
         display: grid;
     }
 }
 
 @media screen and (max-width: 400px) {
-    #score-board {
+    .score-board {
         font-size: 1em;
     }
 }

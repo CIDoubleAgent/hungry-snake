@@ -40,19 +40,19 @@ window.addEventListener('pointerdown', e => {
             if (lastInputDirection.x !==0 ) break
             inputDirection = { x: 1, y: 0 };
             break
-        case 'up-arrow':
+        case 'upArrow':
             if (lastInputDirection.y !==0 ) break
             inputDirection = { x: 0, y: -1 };
             break
-        case 'down-arrow':
+        case 'downArrow':
             if (lastInputDirection.y !==0 ) break
             inputDirection = { x: 0, y: 1 };
             break
-        case 'left-arrow':
+        case 'leftArrow':
             if (lastInputDirection.x !==0 ) break
             inputDirection = { x: -1, y: 0 };
             break
-        case 'right-arrow':
+        case 'rightArrow':
             if (lastInputDirection.x !==0 ) break
             inputDirection = { x: 1, y: 0 };
             break

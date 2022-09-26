@@ -2,8 +2,8 @@ import { difficultyMod } from './difficulty.js'
 
 let SCORE_MODIFIER = difficultyMod * 5;
 let score = parseInt(document.getElementById('scoreCount').innerHTML);
-const personalBestScore = document.getElementById('personalBest');
-const lastScore = document.getElementById('lastScore');
+const personalBestScore = document.getElementById('personalBestCount');
+const lastScore = document.getElementById('lastScoreCount');
 const resetButton = document.getElementById('reset');
 
 export function updateScore() {
@@ -14,34 +14,34 @@ export function updateScore() {
 export function updateBestScore() {
     if (personalBestScore.innerHTML < score) {
             personalBestScore.innerHTML = score;
-            localStorage.setItem('bestScore', personalBestScore.firstChild.data);
+            localStorage.setItem('bestScoreCount', personalBestScore.firstChild.data);
         } else {
         return
         }
 }
 
 export function getBestScore() {
-    if (localStorage.getItem('bestScore')) {
-        personalBestScore.innerHTML = parseInt(localStorage.getItem('bestScore'));
+    if (localStorage.getItem('bestScoreCount')) {
+        personalBestScore.innerHTML = parseInt(localStorage.getItem('bestScoreCount'));
     } else {
         personalBestScore.innerHTML = 0;
     }
 }
 
 export function updateLastScore() {
-    localStorage.setItem('lastScore', score);
+    localStorage.setItem('lastScoreCount', score);
 }
 
 export function getLastScore() {
-    if (localStorage.getItem('lastScore')) {
-        lastScore.innerHTML = parseInt(localStorage.getItem('lastScore'));
+    if (localStorage.getItem('lastScoreCount')) {
+        lastScore.innerHTML = parseInt(localStorage.getItem('lastScoreCount'));
     } else {
         lastScore.innerHTML = 0;
     }
 }
 
 resetButton.addEventListener('pointerup', function() {
-    localStorage.removeItem('bestScore');
-    localStorage.removeItem('lastScore');
+    localStorage.removeItem('bestScoreCount');
+    localStorage.removeItem('lastScoreCount');
     window.location.reload();
 })

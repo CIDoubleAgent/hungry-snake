@@ -6,7 +6,7 @@ import { getDifficulty } from './difficulty.js'
 
 let lastRenderTime = 0;
 let gameOver = false;
-const gameBoard = document.getElementById('game-board');
+const gameBoard = document.getElementById('gameBoard');
 
 window.onload = function() {
     getBestScore();
