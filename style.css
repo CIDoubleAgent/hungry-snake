@@ -111,6 +111,48 @@ body {
     margin: .8vmin;
 }
 
+.modal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    color: yellowgreen;
+    background-color: #202020;
+    border: 3px solid #292929;
+    border-radius: 7px;
+    margin-top: 31vmin;
+    padding: 0 30px 30px 30px;
+    font-size: 3.5vmin;
+}
+
+article p {
+    color: whitesmoke;
+}
+
+.close {
+    align-self: flex-end;
+    color: #414141;
+    float: right;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.play-again-button {
+    color: yellowgreen;
+    background-color: black;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 2.5vh;
+}
+
 @media screen and (max-width: 570px) {
     .score-board {
         font-size: 1.2em;

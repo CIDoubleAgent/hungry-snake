@@ -3,6 +3,7 @@ import { update as updateFood, render as renderFood } from './food.js'
 import { outsideGrid } from './grid.js'
 import { getBestScore, updateBestScore, getLastScore, updateLastScore } from './score.js'
 import { getDifficulty } from './difficulty.js'
+import { showModal } from './modal.js'
 
 let lastRenderTime = 0;
 let gameOver = false;
@@ -18,9 +19,11 @@ function main(currentTime) {
     if (gameOver) {
         updateBestScore();
         updateLastScore();
-        if (confirm('Game Over, your final score is ' + document.getElementById('scoreCount').innerHTML + '. Press OK to restart.')) {
-            window.location.reload();
-        }
+        // if (confirm('Game Over, your final score is ' + document.getElementById('scoreCount').innerHTML + '. Press OK to restart.')) {
+        //     window.location.reload();
+        // }
+        // return;
+        showModal();
         return;
     }
 
