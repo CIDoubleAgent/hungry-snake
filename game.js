@@ -19,10 +19,6 @@ function main(currentTime) {
     if (gameOver) {
         updateBestScore();
         updateLastScore();
-        // if (confirm('Game Over, your final score is ' + document.getElementById('scoreCount').innerHTML + '. Press OK to restart.')) {
-        //     window.location.reload();
-        // }
-        // return;
         showModal();
         return;
     }

@@ -1,5 +1,4 @@
 const gameOverModal = document.getElementById('gameOverModal');
-// const newBestModal = document.getElementById('newBestModal');
 const playAgainButton = document.getElementById('playAgain');
 const score = document.getElementById('scoreCount');
 
