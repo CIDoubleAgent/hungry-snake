@@ -10,3 +10,9 @@ export function showModal() {
 playAgainButton.addEventListener('pointerup', function() {
     window.location.reload();
 })
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

@@ -14,11 +14,11 @@
     </head>
     <body>
         <header class="score-board">
-            <div id="difficulty" class="difficulty-button"></div>
+            <div id="difficulty" class="difficulty-button" tabindex="0"></div>
             <div>Score <span id="scoreCount">0</span></div>
-            <div>Last <span id="lastScoreCount">0</span></div>
-            <div>Best <span id="personalBestCount">0</span></div>
-            <div id="reset" class="reset-button">Reset</div>
+            <div>Last <span id="lastScoreCount"></span></div>
+            <div>Best <span id="personalBestCount"></span></div>
+            <div id="reset" class="reset-button" tabindex="0">Reset</div>
         </header>
         <main id="gameBoard" class="game-board"></main>
         <section class="controls-wrapper">
@@ -28,7 +28,6 @@
             <div id="down" class="down-button"><i id="downArrow" class="fa-solid fa-chevron-down"></i></div>
         </section>
         <article id="modal" class="modal">
-            <span class="close">&times;</span>
             <h1>Game Over</h1>
             <p>Your final score was <span id="finalScore"></span></p>
             <button id="playAgain" class="play-again-button">Play Again</button>
