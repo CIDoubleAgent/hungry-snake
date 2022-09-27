@@ -48,7 +48,9 @@ function setDifficulty() {
 difficultyButton.addEventListener('pointerup', setDifficulty);
 
 difficultyButton.addEventListener('keydown', function(e) {
-    if(e.key == "Enter") {
+    if(e.key === "Enter") {
         setDifficulty();
+    } else if(e.key === 'Escape') {
+        difficultyButton.blur();
     }
 });

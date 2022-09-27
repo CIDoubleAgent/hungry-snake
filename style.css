@@ -127,25 +127,23 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 1;
     color: yellowgreen;
     background-color: rgba(0,0,0,0.8);
     width: 100%;
     height: 100%;
-    padding-top: 20vh;
     font-size: 5vmin;
 }
 
-article p {
-    color: whitesmoke;
+.modal h1 {
+    margin-top: 0;
+    margin-bottom: 7.5vmin;
 }
 
-.close:hover,
-.close:focus {
-    color: yellowgreen;
-    text-decoration: none;
-    cursor: pointer;
+.modal p {
+    color: whitesmoke;
 }
 
 .play-again-button {
@@ -154,8 +152,9 @@ article p {
     border: 3px solid #292929;
     border-radius: 7px;
     padding: 15px;
-    margin-top: 8vmin;
-    font-size: 3vh;
+    margin-top: 7.5vmin;
+    margin-bottom: 3vmin;
+    font-size: 3vmin;
     cursor: pointer;
 }
 
@@ -170,8 +169,8 @@ article p {
         display: grid;
     }
 
-    .modal {
-        padding-top: 12vh;
+    .play-again-button {
+        margin-bottom: 35vh;
     }
 }
 

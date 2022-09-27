@@ -47,9 +47,11 @@ resetButton.addEventListener('pointerup', function() {
 })
 
 resetButton.addEventListener('keydown', function(e) {
-    if(e.key == "Enter") {
+    if(e.key === "Enter") {
         localStorage.removeItem('bestScoreVal');
         localStorage.removeItem('lastScoreVal');
         window.location.reload();
+    } else if(e.key === 'Escape') {
+        resetButton.blur();
     }
 });
