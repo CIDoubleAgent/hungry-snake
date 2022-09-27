@@ -5,14 +5,17 @@ const score = document.getElementById('scoreCount');
 export function showModal() {
     modal.style.display = 'flex';
     finalScore.innerHTML = score.innerHTML;
+    playAgainButton.focus();
 }
 
 playAgainButton.addEventListener('pointerup', function() {
     window.location.reload();
 })
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+playAgainButton.addEventListener('keydown', keyPressed);
+
+function keyPressed(e) {
+  if(e.key == "Enter" && (document.getElementById('modal').style.display = 'flex')) {
+    window.location.reload();
+  }
 }

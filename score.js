@@ -45,3 +45,11 @@ resetButton.addEventListener('pointerup', function() {
     localStorage.removeItem('lastScoreVal');
     window.location.reload();
 })
+
+resetButton.addEventListener('keydown', function(e) {
+    if(e.key == "Enter") {
+        localStorage.removeItem('bestScoreVal');
+        localStorage.removeItem('lastScoreVal');
+        window.location.reload();
+    }
+});
