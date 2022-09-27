@@ -1,1 +1,40 @@
-# hungry-snake
+# Hungry Snake
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+## Description
+Hungry Snake is a basic snake game made with vanilla js. This app is mobile friendly and functions using the arrow keys or touch controls on narrow viewports.
+## Deployed Site
+https://cidoubleagent.github.io/hungry-snake/
+## Github Repository
+https://github.com/CIDoubleAgent/hungry-snake
+## Table of contents
+* [Usage](#usage)
+* [Liscense](#liscense)
+* [Questions](#questions)
+## Usage
+Press arrow keys or touch controls to begin snake movement. The objective is to score as many points as possible by eating the white "food" dots.
+## Liscense
+* Link: https://opensource.org/licenses/MIT  
+
+    Copyright <YEAR> <COPYRIGHT HOLDER>
+
+    Permission is hereby granted, free of charge, to any person obtaining 
+    a copy of this software and associated documentation files 
+    (the "Software"), to deal in the Software without restriction, 
+    including without limitation the rights to use, copy, modify, merge, 
+    publish, distribute, sublicense, and/or sell copies of the Software, 
+    and to permit persons to whom the Software is furnished to do so, 
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included 
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Questions
+* GitHub username: [CIDoubleAgent](https://github.com/CIDoubleAgent)
+* Contact email: nzabkar@gmail.com
