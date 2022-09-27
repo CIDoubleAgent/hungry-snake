@@ -75,24 +75,36 @@ body {
     font-size: 2em;
 }
 
-.upBtn {
+.up-button {
     border-right: solid 1px #292929;
     border-bottom: solid 1px #292929;
+    border-radius: 100% 0 0 0;
 }
 
-.rightBtn {
+.right-button {
     border-left: solid 1px #292929;
     border-bottom: solid 1px #292929;
+    border-radius: 0 100% 0 0;
 }
 
-.downBtn {
+.down-button {
     border-top: solid 1px #292929;
     border-left: solid 1px #292929;
+    border-radius: 0 0 100% 0;
 }
 
-.leftBtn {
+.left-button {
     border-top: solid 1px #292929;
     border-right: solid 1px #292929;
+    border-radius: 0 0 0 100%;
+}
+
+.up-button:active,
+.right-button:active,
+.down-button:active,
+.left-button:active {
+    color: black;
+    background-color: yellowgreen;
 }
 
 .snake {
