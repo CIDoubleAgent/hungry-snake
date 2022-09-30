@@ -11,7 +11,7 @@ https://github.com/CIDoubleAgent/hungry-snake
 * [Liscense](#liscense)
 * [Questions](#questions)
 ## Usage
-Press arrow keys or touch controls to begin snake movement. The objective is to score as many points as possible by eating the white "food" dots.
+Press arrow keys or touch controls to begin snake movement. The objective is to score as many points as possible by eating the white "food" dots. Tap or click the difficulty in the top left corner to change difficulty, tap reset to reset your scores.
 ## Screenshots
 ### Monitor ![hungry-snake_1](https://github.com/CIDoubleAgent/hungry-snake/blob/main/images/hungry-snake_1.png?raw=true)
 
