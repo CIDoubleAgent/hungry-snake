@@ -20,7 +20,7 @@ Press arrow keys or touch controls to begin snake movement. The objective is to 
 ## Liscense
 * Link: https://opensource.org/licenses/MIT  
 
-    Copyright 2022 NIcholas Zabkar
+    Copyright 2022 Nicholas Zabkar
 
     Permission is hereby granted, free of charge, to any person obtaining 
     a copy of this software and associated documentation files 
@@ -42,4 +42,5 @@ Press arrow keys or touch controls to begin snake movement. The objective is to 
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Questions
 * GitHub username: [CIDoubleAgent](https://github.com/CIDoubleAgent)
-* Contact email: nzabkar@gmail.com
+* Contact email: [nickz51dev@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nickz51dev@gmail.com)
+* Profile Page: [Click Here](https://cidoubleagent.github.io/react-portfolio/)
