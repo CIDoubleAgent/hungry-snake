@@ -1,7 +1,7 @@
 # Hungry Snake
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## Description
-Hungry Snake is a basic snake game made with vanilla js. This app is mobile friendly and functions using the arrow keys or touch controls on narrow viewports.
+Hungry Snake is a classic snake game made with vanilla js. This app was created with a minimalist approach and is mobile friendly. The game is played using the arrow keys or touch controls on narrow viewports.
 ## Deployed Site
 https://cidoubleagent.github.io/hungry-snake/
 ## Github Repository
